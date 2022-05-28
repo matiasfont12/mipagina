@@ -78,7 +78,11 @@ section{
     padding: 5rem;
 
 }
-
+ 
+.article__img {
+    padding: 3.5rem;
+    margin: 3.5rem;
+}
 
 
 .footer {
