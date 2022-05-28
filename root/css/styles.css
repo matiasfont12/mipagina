@@ -2,11 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 
 }
 
 body{
 	overflow-x: hidden;
+    background-color: black;
+    color: white;
     
 }
 
@@ -15,9 +19,8 @@ html{
 }
 
 .header {
-    background-color: black;
-    padding: 1rem
-    ;
+    padding: 1rem;
+    margin: 1rem;
 
 }
 
@@ -28,44 +31,57 @@ html{
     font-family: serif;
     font-size: 2.3rem;
     color: gray;
-    background-color: black;
 }
 
 .header__navegation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     font-style: normal;
     font-size: 1.2rem;
     font-family: serif;
     font-weight: bold;
-    list-style: none;
     text-align: center;
-    background-color: black;
     line-height: 60px;
-    
-    
+
 }
 
 .header__item {
-    display: inline;
+   
     padding: 20px 30px;
     top: 0px;
+    margin: 0.5rem;
    
 }
 
+#grid {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "section"
+    "footer";
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+}
 
+section{
+    grid-area: section;
+}
 
 .article {
-    background-color: black;
+    display: flex;
+    flex-direction: row;
     color: pink;
     font-family: sans-serif;
     font-style: oblique;
     line-height: 30px;
-    padding: 20px;
+    padding: 5rem;
 
 }
 
 
+
 .footer {
-    background-color: black;
     background-size: cover;
     
 }
@@ -76,6 +92,7 @@ html{
     font-style: normal;
     font-size: 1rem;
     color:darkslateblue;
+    padding: 20px;
     
 }
 
