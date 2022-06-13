@@ -55,7 +55,7 @@ html{
 }
 
 #grid {
-    height: 100vh;
+    height: 180vh;
     display: grid;
     grid-template-areas: 
     "section"
@@ -69,6 +69,7 @@ section{
 }
 
 .article {
+
     display: flex;
     flex-direction: row;
     color: pink;
@@ -76,17 +77,22 @@ section{
     font-style: oblique;
     line-height: 30px;
     padding: 5rem;
+    
 
 }
  
-.article__img {
+/* .article__img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding: 3.5rem;
     margin: 3.5rem;
 }
-
+ */
 
 .footer {
-    background-size: cover;
+    height: 80vh;
     
 }
 
@@ -101,9 +107,114 @@ section{
 }
 
 .footer__img {
+    display: flex;
+    flex-direction: row;
     background-image: url(../assets/istockphoto-583816756-170667a.jpg);
-    background-repeat: space;
+    background-repeat: repeat-x;
+    height: 80vh;
     padding: 80px;
-    margin-top: 20px;
+    margin-top: 60px;
     
+}
+
+/* Celular */
+
+@media only screen and (max-width: 480px) {
+
+    .header__navegation {
+
+        flex-direction: column;
+    
+    
+    }
+
+    .article {
+        height: 300vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-items: center;
+        align-items: flex-end;
+        font-size: small;
+    }
+
+
+
+    section {
+
+        overflow: hidden;
+    }
+
+    #grid {
+        display: grid;
+        grid-template-rows: auto 2fr auto;
+        grid-row-gap: 34px;
+    }
+
+
+    .footer__img {
+
+        flex-direction: column;
+   
+    }
+
+
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+
+    .header__navegation {
+
+        flex-direction: column;
+     
+
+    }
+
+    #grid {
+        display: grid;
+        grid-template-rows: auto 2fr auto;
+        grid-row-gap: 34px;
+    }
+
+    
+
+    section {
+        
+        overflow: hidden;
+    }
+
+    .article {
+        height: 300vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-items: center;
+        align-items: flex-end;
+        font-size: small;
+    }
+  
+    .footer__img {
+       
+    }
+
+}
+
+/* Desktop */
+
+@media only screen and (min-width: 1024px) {
+
+    .header__navegation {
+
+        flex-direction: row;
+
+    
+    }
+
+    section {
+        overflow: hidden;
+    }
+  
+
+
+
 }
