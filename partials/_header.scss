@@ -1,0 +1,62 @@
+.header {
+    padding: 1rem;
+    margin: 1rem;
+    height: 100vh;
+
+    &__title {
+        text-align: left;
+        text-decoration: underline;
+        font-style: normal;
+        font-family: serif;
+        font-size: 3rem;
+        color: gray;
+        height: 30vh;
+    }
+
+    &__navegation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-style: normal;
+        font-size: 1.2rem;
+        font-family: serif;
+        font-weight: bold;
+        text-align: center;
+        line-height: 60px;
+    
+    }
+
+    &__title {
+        text-align: left;
+        text-decoration: underline;
+        font-style: normal;
+        font-family: serif;
+        font-size: 3rem;
+        color: gray;
+        height: 30vh;
+    }
+    
+    &__navegation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-style: normal;
+        font-size: 1.2rem;
+        font-family: serif;
+        font-weight: bold;
+        text-align: center;
+        line-height: 60px;
+    
+    }
+    
+    &__item {
+   
+        padding: 20px 30px;
+        top: 0px;
+        margin: 0.5rem;
+       
+    }
+    
+
+}
+
