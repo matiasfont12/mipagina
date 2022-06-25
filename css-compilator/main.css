@@ -7,7 +7,7 @@
 
 body {
   overflow-x: hidden;
-  background-color: black;
+  background: linear-gradient(90deg, black 0%, #11111d 60%, #0e092e 100%);
   color: white; }
 
 html {
