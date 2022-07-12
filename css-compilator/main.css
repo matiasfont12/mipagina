@@ -16,33 +16,22 @@ html {
 .header {
   padding: 1rem;
   margin: 1rem;
-  height: 100vh; }
+  height: 120vh; }
   .header__title {
     text-align: left;
     text-decoration: underline;
     font-style: normal;
-    font-family: serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 3rem;
-    color: gray;
-    height: 30vh; }
-  .header__navegation {
+    padding: 2rem;
+    margin: 2rem;
+    color: #c5c5df;
+    height: 33vh; }
+  .header__profesion {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-style: normal;
-    font-size: 1.2rem;
-    font-family: serif;
-    font-weight: bold;
-    text-align: center;
-    line-height: 60px; }
-  .header__title {
-    text-align: left;
-    text-decoration: underline;
-    font-style: normal;
-    font-family: serif;
-    font-size: 3rem;
-    color: gray;
-    height: 30vh; }
+    margin-bottom: 8%; }
   .header__navegation {
     display: flex;
     flex-direction: row;
