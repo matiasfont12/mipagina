@@ -31,6 +31,7 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    color: #c5c5df;
     margin-bottom: 8%; }
   .header__navegation {
     display: flex;
@@ -47,6 +48,18 @@ html {
     top: 0px;
     margin: 0.5rem; }
 
+.card--img {
+  opacity: 0.2;
+  height: 150vh;
+  width: 100%; }
+
+.card__title {
+  font-family: 'Chakra Petch', sans-serif;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem;
+  margin: 5rem; }
+
 #grid {
   height: 100vh;
   display: grid;
@@ -59,12 +72,13 @@ section {
 
 .article {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   color: pink;
   font-family: sans-serif;
   font-style: oblique;
   line-height: 30px;
-  padding: 5rem; }
+  padding: 2rem;
+  margin: 1.5rem; }
 
 .article__img {
   padding: 3.5rem;
