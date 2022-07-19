@@ -60,29 +60,26 @@ html {
   padding: 8rem;
   margin: 5rem; }
 
-#grid {
-  height: 100vh;
-  display: grid;
-  grid-template-areas: "section" "footer";
-  grid-template-rows: 50% 50%;
-  grid-template-columns: 50% 50%; }
-
 section {
   grid-area: section; }
 
 .article {
   display: flex;
-  flex-direction: column;
-  color: pink;
-  font-family: sans-serif;
-  font-style: oblique;
+  flex-direction: row;
+  color: white;
+  font-family: 'Chakra Petch', sans-serif;
+  font-style: normal;
   line-height: 30px;
   padding: 2rem;
-  margin: 1.5rem; }
+  margin: 2rem; }
 
-.article__img {
-  padding: 3.5rem;
-  margin: 3.5rem; }
+.section__img {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 7rem;
+  margin: 7rem; }
 
 .footer {
   padding: 2rem; }
@@ -100,6 +97,8 @@ section {
 
 /* mobile */
 @media only screen and (min-width: 480px) and (max-width: 1024) {
-  /* .header__navegation{
-        flex-direction: column;
-    } */ }
+  .article {
+    height: 400vh;
+    width: 100%;
+    justify-content: start;
+    flex-direction: column; } }
